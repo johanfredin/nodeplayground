@@ -1,0 +1,26 @@
+{
+  "name": "nodeplayground",
+  "version": "1.0.0",
+  "description": "playground learning node js and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.6.2",
+    "express": "*",
+    "express-validator": "^6.1.1",
+    "nodemon": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johanfredin/nodeplayground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johanfredin/nodeplayground/issues"
+  },
+  "homepage": "https://github.com/johanfredin/nodeplayground#readme"
+}
