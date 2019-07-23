@@ -20,7 +20,9 @@
   "homepage": "https://github.com/johanfredin/nodeplayground#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
     "moment": "^2.24.0",
+    "mongoose": "^5.6.6",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
