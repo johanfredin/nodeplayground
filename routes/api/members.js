@@ -1,21 +1,6 @@
 const express = require('express')
-const uuid = require('uuid')
-const mongoose = require('mongoose')
 const router = express.Router()
-const dbUrl = 'mongodb://localhost:27017/members'
-
-mongoose.connect(dbUrl, { useNewUrlParser: true }, (err) => {
-    if (err) {
-        console.log(`Could not connect to database at ${dbUrl}`)
-    } else {
-        console.log('Connection successful')
-    }
-})
-const MemberModel = mongoose.model('Member', {
-    name: String,
-    email: String,
-    active: String
-})
+const MemberModel = require('../../model/MemberModel')
 
 // gets all members 
 router.get('/', (req, res) => {

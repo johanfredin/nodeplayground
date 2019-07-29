@@ -22,7 +22,7 @@ test('checkValue i false', () => {
 
 // toEqual, matches content of objects and arrays
 test('Should be Brad Traversy object', () => {
-    expect(functions.createUser()).toEqual({firstName: 'Brad', lastName: 'Traversy'})
+    expect(functions.createUser()).toEqual({ firstName: 'Brad', lastName: 'Traversy' })
 })
 
 
@@ -43,9 +43,9 @@ test('Admin should be in usernames', () => {
 test('Uses fetch name should be Leanne Graham', () => {
     expect.assertions(1)    // veryfy a certain number of calls
     return functions.fetchUser()
-    .then(data => {
-        expect(data.name).toEqual('Leanne Graham')
-    }) 
+        .then(data => {
+            expect(data.name).toEqual('Leanne Graham')
+        })
 })
 
 // Check for THRUTHY or FALSEY values
