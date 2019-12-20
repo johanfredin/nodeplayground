@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
+    "start": "node server",
     "test": "jest",
-    "dev": "nodemon index"
+    "server": "nodemon server",
+    "dev": "nodemon server"
   },
   "repository": {
     "type": "git",
@@ -21,12 +22,13 @@
   "homepage": "https://github.com/johanfredin/nodeplayground#readme",
   "dependencies": {
     "axios": "^0.19.0",
+    "concurrently": "^4.1.1",
     "express": "^4.17.1",
     "moment": "^2.24.0",
     "mongoose": "^5.6.6"
   },
   "devDependencies": {
-    "jest": "^24.8.0",
+    "jest": "24.7.1",
     "nodemon": "^1.19.1"
   }
 }

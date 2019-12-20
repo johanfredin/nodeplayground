@@ -8,6 +8,7 @@ router.get('/', (req, res) => {
         if (err) {
             return res.json({ msg: 'Could not retrieve members' })
         }
+        console.log('Members fetched from server')
         res.json(members)
     })
 })
@@ -41,7 +42,7 @@ router.post('/', (req, res) => {
 
 // Update member
 router.put('/:id', (req, res) => {
-    
+
     const updateMember = {
         name: req.body.name,
         email: req.body.email
@@ -55,7 +56,7 @@ router.put('/:id', (req, res) => {
         } else {
             member.name = updateMember.name
             member.email = updateMember.email
-            member.save().then(() => res.json({msg: 'Member updated', member}))
+            member.save().then(() => res.json({ msg: 'Member updated', member }))
         }
     })
 })
